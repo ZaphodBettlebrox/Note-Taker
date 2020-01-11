@@ -4,73 +4,23 @@
 
 Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
-* The application frontend has already been created, it's your job to build the backend and connect the two.
+GitHub link: https://note-taker-zaphodb.herokuapp.com/notes
 
-* The following HTML routes should be created:
+Website link: https://note-taker-zaphodb.herokuapp.com/notes
 
-  * GET `/notes` - Should return the `notes.html` file.
 
-  * GET `*` - Should return the `index.html` file
+To use the program: 
 
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
+To load the website, you can use the website link above.
 
-* The following API routes should be created:
+The home page has two buttons, one is the "Note Taker" text on the top left to bring back to the current home page, the other is the "Get Started" button to start the application.
 
-  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
+The note page still has the home button on the top left, but also has a edit and save icon on the right side. The save button only shows when there is text filed in. To make a note, fill information into the "Note Title" and "Note Text" boxes and click save, this will create a box on the left side of your note. To deleate the note, click the trash button on the right side of each note.
 
-  * POST `/api/notes` - Should recieve a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+## made with
 
-  * DELETE `/api/notes/:id` - Should recieve a query paramter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+Html, JS, CSS, Heroku, Express, and Node
 
-## User Story
+## creator
 
-AS A user, I want to be able to write and save notes
-
-I WANT to be able to delete notes I've written before
-
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-
-## Business Context
-
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
-
-## Acceptance Criteria
-
-Application should allow users to create and save notes.
-
-Application should allow users to view previously saved notes.
-
-Application should allow users to delete previously saved notes.
-
-- - -
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
-
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+Aidan Willett
